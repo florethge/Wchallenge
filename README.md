@@ -1,0 +1,4 @@
+###Prerequisites
+
+npm install testcafe
+
