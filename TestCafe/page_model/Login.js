@@ -19,3 +19,5 @@ class Login{
         await t.click(this.loginButton);
     }
 }
+
+export default new Login();

@@ -1,12 +1,13 @@
 {
     "dependencies": {
+        "dotenv": "^10.0.0",
         "testcafe": "^1.16.1"
     },
     "scripts": {
-        "testlogin": "testcafe chrome login.test.js ",
-        "test-all-firefox": "testcafe firefox ./tests ",
-        "test-all-edge": "testcafe edge ./tests ",
-        "test-all-ie": "testcafe ie ./tests ",
-        "test-all-browsers": "testcafe all ./tests "
-      }
+        "test-all-chrome": "testcafe chrome *.test.js ",
+        "test-all-firefox": "testcafe firefox *.test.js ",
+        "test-all-edge": "testcafe edge *.test.js ",
+        "test-all-ie": "testcafe ie *.test.js ",
+        "test-all-browsers": "testcafe all *.test.js "
+    }
 }
