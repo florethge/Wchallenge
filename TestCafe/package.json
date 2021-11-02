@@ -1,13 +1,19 @@
 {
     "dependencies": {
         "dotenv": "^10.0.0",
-        "testcafe": "^1.16.1"
+        "testcafe": "^1.16.1",
+        "testcafe-reporter-html": "^1.4.6"
     },
     "scripts": {
         "test-all-chrome": "testcafe chrome *.test.js ",
         "test-all-firefox": "testcafe firefox *.test.js ",
         "test-all-edge": "testcafe edge *.test.js ",
         "test-all-ie": "testcafe ie *.test.js ",
-        "test-all-browsers": "testcafe all *.test.js "
+        "test-all-browsers": "testcafe all *.test.js ",
+        "report-all-chrome": "testcafe chrome *.test.js --reporter html:report.html",
+        "report-all-firefox": "testcafe firefox *.test.js --reporter html:report.html ",
+        "report-all-edge": "testcafe edge *.test.js --reporter html:report.html ",
+        "report-all-ie": "testcafe ie *.test.js --reporter html:report.html ",
+        "report-all-browsers": "testcafe all *.test.js --reporter html:report.html "
     }
 }
