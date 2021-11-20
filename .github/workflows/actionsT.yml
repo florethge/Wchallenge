@@ -14,12 +14,12 @@ jobs:
       - name: Create repository checkout
         uses: actions/checkout@v2
 
-      # - name: Run tests in Chrome
-      #   uses: DevExpress/testcafe-action@latest
-      #   with:
-      #     args: "chrome ../../TestCafe/*.test.js"
+      - name: Run tests in Chrome
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome ../../TestCafe/*.test.js"
         
-      # - name: Run tests in Firefox
-      #   uses: DevExpress/testcafe-action@latest
-      #   with:
-      #     args: "firefox ../../TestCafe/*.test.js"
+      - name: Run tests in Firefox
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "firefox ../../TestCafe/*.test.js"
