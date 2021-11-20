@@ -3,7 +3,7 @@ name: runTests
 on:
   workflow_dispatch:
   push:
-    branches: [ $default-branch ]
+    branches: [master]
   pull_request:
     branches: [ master ]
 
@@ -17,9 +17,9 @@ jobs:
       - name: Run tests in Chrome
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome ../../TestCafe/*.test.js"
+          args: "chrome TestCafe/*.test.js"
         
       - name: Run tests in Firefox
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "firefox ../../TestCafe/*.test.js"
+          args: "firefox TestCafe/*.test.js"
