@@ -1,6 +1,7 @@
 name: runTests
 
 on:
+  workflow_dispatch:
   push:
     branches: [ $default-branch ]
   pull_request:
@@ -8,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: [ubuntu-latest, windows-lastest]
+    runs-on: windows-latest
     steps:
       - name: Create repository checkout
         uses: actions/checkout@v2
