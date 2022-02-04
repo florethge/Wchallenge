@@ -1,11 +1,12 @@
-import Login from './page_model/Login'
-import Products from './page_model/Products'
-import Cart from './page_model/Cart'
+import Login from '../pages/login-page'
+import Products from '../pages/products-page'
+import Cart from '../pages/cart-page'
 import dotenv from 'dotenv'
+import { URLS } from '../data/constants'
 dotenv.config()
 
 fixture `Add a specific product to cart Feature Test`
-    .page `https://www.saucedemo.com/`;
+    .page `${URLS.HOME_URL}`;
 
 test
     ('Add a specific product to shopping cart', async t => {

@@ -1,10 +1,11 @@
-import Login from './page_model/Login'
-import Products from './page_model/Products'
+import Login from '../pages/login-page'
+import Products from '../pages/products-page'
 import dotenv from 'dotenv'
+import { URLS } from '../data/constants'
 dotenv.config()
 
 fixture `Sort Low to High Feature Tests`
-    .page `https://www.saucedemo.com/`;
+    .page `${URLS.HOME_URL}`;
 
 test
     ('Sort products from low to high feature ', async t => {

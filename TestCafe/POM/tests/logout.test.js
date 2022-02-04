@@ -1,10 +1,11 @@
-import Login from './page_model/Login'
-import Navbar from './page_model/Navbar'
+import Login from '../pages/login-page'
+import Navbar from '../pages/navbar-page'
 import dotenv from 'dotenv'
+import { URLS } from '../data/constants'
 dotenv.config()
 
 fixture `Logout Feature Tests`
-    .page `https://www.saucedemo.com/`;
+    .page `${URLS.HOME_URL}`;
 
 test
     ('Proper Logout ', async t => {

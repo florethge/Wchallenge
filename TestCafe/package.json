@@ -5,15 +5,20 @@
         "testcafe-reporter-html": "^1.4.6"
     },
     "scripts": {
-        "test-all-chrome": "testcafe chrome *.test.js ",
-        "test-all-firefox": "testcafe firefox *.test.js ",
-        "test-all-edge": "testcafe edge *.test.js ",
-        "test-all-ie": "testcafe ie *.test.js ",
-        "test-all-browsers": "testcafe all *.test.js ",
-        "report-all-chrome": "testcafe chrome *.test.js --reporter html:report.html",
-        "report-all-firefox": "testcafe firefox *.test.js --reporter html:report.html ",
-        "report-all-edge": "testcafe edge *.test.js --reporter html:report.html ",
-        "report-all-ie": "testcafe ie *.test.js --reporter html:report.html ",
-        "report-all-browsers": "testcafe all *.test.js --reporter html:report.html "
+        "test-all-chrome-headless": "testcafe chrome:headless POM/tests/*.test.js ",
+        "test-all-chrome": "testcafe chrome POM/tests/*.test.js ",
+        "test-all-firefox": "testcafe firefox POM/tests/*.test.js ",
+        "test-all-edge": "testcafe edge POM/tests/*.test.js ",
+        "test-all-ie": "testcafe ie POM/tests/*.test.js ",
+        "test-all-browsers": "testcafe all POM/tests/*.test.js ",
+        "report-all-chrome": "testcafe chrome POM/tests/*.test.js --reporter html:report.html",
+        "report-all-firefox": "testcafe firefox POM/tests/*.test.js --reporter html:report.html ",
+        "report-all-edge": "testcafe edge POM/tests/*.test.js --reporter html:report.html ",
+        "report-all-ie": "testcafe ie POM/tests/*.test.js --reporter html:report.html ",
+        "report-all-browsers": "testcafe all POM/tests/*.test.js --reporter html:report.html "
+    },
+    "devDependencies": {
+        "eslint": "^8.8.0",
+        "eslint-plugin-testcafe": "^0.2.1"
     }
 }

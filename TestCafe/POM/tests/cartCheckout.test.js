@@ -1,12 +1,13 @@
-import Login from './page_model/Login'
-import Products from './page_model/Products'
-import Cart from './page_model/Cart'
+import Login from '../pages/login-page'
+import Products from '../pages/products-page'
+import Cart from '../pages/cart-page'
 import dotenv from 'dotenv'
-import Checkout from './page_model/Checkout'
+import Checkout from '../pages/checkout-page'
+import { URLS } from '../data/constants'
 dotenv.config()
 
 fixture `Complete purchase Feature Test`
-    .page `https://www.saucedemo.com/`;
+    .page `${URLS.HOME_URL}`;
 
 test
     ('Checkout flow test', async t => {
